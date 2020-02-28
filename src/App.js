@@ -8,9 +8,25 @@ import 'bulma/css/bulma.css';
 
 function App() {
   const [results, setResults] = useState([]);
+  const [usedSearch, setUsedSearch] = useState(false);
 
   const _handleResults = res => {
     setResults(res);
+    setUsedSearch(true);
+  };
+
+  const _renderResults = () => {
+    return results.length === 0 ? (
+      <p>
+        Sorry!
+        <span role="img" aria-label="Emoji">
+          😞
+        </span>
+        Results not found!
+      </p>
+    ) : (
+      <MoviesList movies={results} />
+    );
   };
 
   return (
@@ -19,7 +35,7 @@ function App() {
       <div className="SearchForm-wrapper">
         <SearchForm onResults={_handleResults} />
       </div>
-      {results.length === 0 ? <p>Sin resultados</p> : <MoviesList movies={results} />}
+      {usedSearch ? _renderResults() : <small>Use the form to search a movie</small>}
     </div>
   );
 }
