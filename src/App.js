@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Title } from './components/Title';
 import { SearchForm } from './components/SearchForm';
+import { MoviesList } from './components/MoviesList';
 
 import './App.css';
 import 'bulma/css/bulma.css';
@@ -12,19 +13,13 @@ function App() {
     setResults(res);
   };
 
-  const _renderResults = () => {
-    return results.map(movie => {
-      return <p key={movie.imdbID}>{movie.Title}</p>;
-    });
-  };
-
   return (
     <div className="App">
       <Title>Search Movies</Title>
       <div className="SearchForm-wrapper">
         <SearchForm onResults={_handleResults} />
       </div>
-      {results.length === 0 ? <p>Sin resultados</p> : _renderResults()}
+      {results.length === 0 ? <p>Sin resultados</p> : <MoviesList movies={results} />}
     </div>
   );
 }
