@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 
-export const SearchForm = () => {
+const API_KEY = '99f2c4bc';
+
+export const SearchForm = ({ onResults }) => {
   const [inputMovie, setInputMovie] = useState('');
 
   const _handleChange = e => {
@@ -9,7 +11,14 @@ export const SearchForm = () => {
 
   const _handleSubmit = e => {
     e.preventDefault();
-    alert(inputMovie);
+
+    fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=${inputMovie}`)
+      .then(response => response.json())
+      .then(results => {
+        const { Search, totalResults } = results;
+        console.log({ Search, totalResults });
+        onResults(Search);
+      });
   };
 
   return (
