@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/spa-imdbMovie/static/css/main.02dd040c.chunk.css",
+    "main.js": "/spa-imdbMovie/static/js/main.78b64e5d.chunk.js",
+    "main.js.map": "/spa-imdbMovie/static/js/main.78b64e5d.chunk.js.map",
+    "runtime-main.js": "/spa-imdbMovie/static/js/runtime-main.ca1db749.js",
+    "runtime-main.js.map": "/spa-imdbMovie/static/js/runtime-main.ca1db749.js.map",
+    "static/css/2.70d9d258.chunk.css": "/spa-imdbMovie/static/css/2.70d9d258.chunk.css",
+    "static/js/2.9c287614.chunk.js": "/spa-imdbMovie/static/js/2.9c287614.chunk.js",
+    "static/js/2.9c287614.chunk.js.map": "/spa-imdbMovie/static/js/2.9c287614.chunk.js.map",
+    "index.html": "/spa-imdbMovie/index.html",
+    "precache-manifest.5f01b11dd562e380f979d24cbf7fae7d.js": "/spa-imdbMovie/precache-manifest.5f01b11dd562e380f979d24cbf7fae7d.js",
+    "service-worker.js": "/spa-imdbMovie/service-worker.js",
+    "static/css/2.70d9d258.chunk.css.map": "/spa-imdbMovie/static/css/2.70d9d258.chunk.css.map",
+    "static/css/main.02dd040c.chunk.css.map": "/spa-imdbMovie/static/css/main.02dd040c.chunk.css.map",
+    "static/js/2.9c287614.chunk.js.LICENSE.txt": "/spa-imdbMovie/static/js/2.9c287614.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ca1db749.js",
+    "static/css/2.70d9d258.chunk.css",
+    "static/js/2.9c287614.chunk.js",
+    "static/css/main.02dd040c.chunk.css",
+    "static/js/main.78b64e5d.chunk.js"
+  ]
+}
